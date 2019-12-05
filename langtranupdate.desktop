@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=LangTranUpdate
+X-GNOME-FullName=LangTran Update Script
+GenericName=Software Distribution System updater
+Comment=For updating a local software repository
+Path=/usr/local/langtran
+Exec=/usr/local/langtran/LangTranUpdate.sh
+Icon=/usr/local/langtran/Progs/LangTran-icon.ico
+Terminal=true
+Type=Application
+Categories=Network
+StartupWMClass=gpodder

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=LangTran List of folders to get
+X-GNOME-FullName=LangTran folder list editor
+GenericName=Software Distribution System list editor
+Comment=Edit list of folders to update in a local software repository
+Path=/usr/local/langtran
+Exec=/bin/nano /usr/local/langtran/LangTranList.txt
+Icon=/usr/local/langtran/Progs/LangTran-icon.ico
+Terminal=true
+Type=Application
+Categories=Network;Settings
+# StartupWMClass=gpodder

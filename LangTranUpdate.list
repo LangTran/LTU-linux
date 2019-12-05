@@ -1,0 +1,22 @@
+%product LangTranUpdate for Ubuntu linux
+%copyright 2019 Jim Henderson
+%vendor Jim Henderson
+%description Linux version of LangTran software distribution system updater that uses rsync
+%version 3.05
+$MyName=langtran
+$LRun=langtranupdate.desktop
+$LBehaviour=LTbehaviour.desktop
+# %arch all
+%license ${MyName}/Progs/LICENSE.txt
+%readme ${MyName}/Progs/README.txt
+%preinstall <${MyName}/Progs/LT-setup.sh
+%postinstall <${MyName}/Progs/set-permissions.sh
+
+f 774 root ${MyName} /usr/local/${MyName} ./langtran/*.sh nostrip()
+f 774 root ${MyName} /usr/local/${MyName} ./langtran/*.txt nostrip()
+f 774 root ${MyName} /usr/share/applications ./*.desktop nostrip()
+
+f 774 root ${MyName} /usr/local/${MyName}/Progs ./langtran/Progs/* nostrip()
+
+d 775 root ${MyName} /usr/local/${MyName} -
+d 775 root ${MyName} /usr/local/${MyName}/Progs -

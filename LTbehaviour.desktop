@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=LangTran Behaviour
+X-GNOME-FullName=LangTran Behaviour editor
+GenericName=Software Distribution System behaviour editor
+Comment=Settings for updating a local software repository
+Path=/usr/local/langtran
+Exec=/bin/nano /usr/local/langtran/Behaviour.sh
+Icon=/usr/local/langtran/Progs/LangTran-icon.ico
+Terminal=true
+Type=Application
+Categories=Network;Settings
+# StartupWMClass=gpodder
