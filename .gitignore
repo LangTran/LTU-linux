@@ -1,0 +1,4 @@
+# folder made by epm for preparing the .deb file
+Output/**
+*.bak
+*.backup
